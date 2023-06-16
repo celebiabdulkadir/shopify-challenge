@@ -18,6 +18,8 @@ Create a webpage that can search OMDB for movies, and allow the user to save the
 ![Example image](./example.png)
 
 Example of one of the people who tried this: [Live example](https://the-shoppies-gyk.netlify.app/)
+# Live
+[![Netlify Status](https://api.netlify.com/api/v1/badges/05406161-c451-49e9-8399-78ef2d9f212f/deploy-status)](https://shopify-challange-recoded.netlify.app/)
 
 # Instructions: 
 - Use `scss` instead of css if you going with `react-bootstrap`
