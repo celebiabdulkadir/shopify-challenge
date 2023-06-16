@@ -16,6 +16,8 @@ export default function Home() {
 	};
 
 	const nominate = (result) => {
+		if (nominations.length === 5)
+			return alert('You have reached the maximum number of nominations');
 		setNominations([...nominations, result]);
 	};
 
@@ -103,7 +105,7 @@ export default function Home() {
 				</div>
 				<div className='flex  flex-col justify-start w-full gap-6 mt-4 lg:mt-0'>
 					<div className='text-4xl font-bold text-center text-gray-800'>
-						NOMINATIONS
+						NOMINATIONS {nominations.length}/5
 					</div>
 					<div>
 						{nominations?.map((nomination, index) => {
