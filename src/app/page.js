@@ -24,7 +24,7 @@ export default function Home() {
 	const searchMoviesAndSeries = async (type, query) => {
 		try {
 			const { data } = await axios.get(
-				`http://www.omdbapi.com/?apikey=83d5d697&${type}=${query}`
+				`https://www.omdbapi.com/?apikey=83d5d697&${type}=${query}`
 			);
 
 			if (data.Response === 'False') {
@@ -86,7 +86,7 @@ export default function Home() {
 														disabled={nominations.some(
 															(nomination) => nomination.Title === result.Title
 														)}
-														className='bg-red-200 rounded px-4 py-2'
+														className='bg-green-200  rounded px-4 py-2'
 														onClick={() => {
 															return nominate(result);
 														}}
