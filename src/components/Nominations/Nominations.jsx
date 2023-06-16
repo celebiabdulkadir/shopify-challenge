@@ -4,7 +4,7 @@ const Nominations = ({ nominations, setNominations }) => {
 		<div>
 			{nominations?.map((nomination, index) => {
 				return (
-					<div className='bg-green-200 mb-4 rounded px-2' key={index}>
+					<div className='bg-green-200 mb-4 rounded px-2 mx-2' key={index}>
 						<NominationItem
 							nominations={nominations}
 							nomination={nomination}

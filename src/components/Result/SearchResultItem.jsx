@@ -1,7 +1,7 @@
 const SearchResultItem = ({ result, nominations, nominate }) => {
 	return (
 		<>
-			<div className='flex justify-between items-center w-full '>
+			<div className='flex justify-between items-center w-full  '>
 				{result.Title && (
 					<>
 						{' '}
