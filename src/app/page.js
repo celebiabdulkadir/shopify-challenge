@@ -35,6 +35,7 @@ export default function Home() {
 
 	const onSubmit = (data) => {
 		searchMoviesAndSeries('s', data.search);
+		reset();
 	};
 
 	const nominate = (result) => {
